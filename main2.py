@@ -7,8 +7,9 @@ def trivia_fetch(num):
 
 import json
 import requests
+import random
 
-number = requests.get("http://numbersapi.com/num?json")
+number = requests.get("http://numbersapi.com/random?json")
 triv = json.loads(number.content)
 
 
